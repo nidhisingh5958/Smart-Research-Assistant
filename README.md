@@ -22,3 +22,19 @@ An autonomous AI tool that searches, summarizes, and generates structured report
 git clone https://github.com/nidhisingh5958/Smart-Research-Assistant.git
 cd Smart-Research-Assistant
 pip install -r requirements.txt
+
+## 📂 Project Structure
+
+```bash
+smart-research-assistant/
+├── agent/
+│   ├── planner.py          # Converts goal into sub-tasks
+│   ├── tools.py            # Search + summarization tools
+│   ├── memory.py           # Vector database (FAISS/Chroma)
+│   └── agent.py            # Main agent loop
+├── ui/
+│   ├── streamlit_app.py    # (or Electron/React frontend)
+├── reports/
+│   └── output_*.md         # Generated reports
+├── requirements.txt
+└── README.md
